@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" id="hero">
     <div class="hero-content">
       <div class="hero-img">
         <img :src="require('@/static/img/author.jpg')" :alt="name" />
@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 .hero {
   height: 100vh;
   background: linear-gradient(
@@ -106,6 +107,7 @@ export default {
 .hero-content h1 span {
   padding: 4px 15px;
   position: relative;
+  font-family: 'Lobster', cursive !important;
 }
 
 .hero-content h1 span:before {
