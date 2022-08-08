@@ -4,7 +4,7 @@
     <div class="service-bottom">
       <div class="service-item" v-for="service in services" :key="service.id">
         <div class="icon">
-          <img :src="service.icon" />
+          <img :src="require(`@/static/img/${service.icon}-icon.svg`)" />
         </div>
         <h2>{{ service.title }}</h2>
         <p>{{ service.content }}</p>
@@ -19,20 +19,20 @@ export default {
     return {
       services: [
         {
-          title: 'Graphic design',
-          icon: 'https://img.icons8.com/bubbles/100/000000/services.png',
+          title: 'Graphic Design',
+          icon: 'stationery',
           content:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod',
         },
         {
-          title: 'Graphic design',
-          icon: 'https://img.icons8.com/bubbles/100/000000/services.png',
+          title: 'Social Postes',
+          icon: 'brochure-catalog',
           content:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod',
         },
         {
-          title: 'Graphic design',
-          icon: 'https://img.icons8.com/bubbles/100/000000/services.png',
+          title: 'Brand Identity',
+          icon: 'brand-identity',
           content:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod',
         },
@@ -85,16 +85,24 @@ export default {
   opacity: 0.9;
   z-index: -1;
 }
-.service-bottom .icon {
-  height: 120px;
-  width: 120px;
+.icon {
+  width: 100%;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
 }
 .service-item h2 {
   font-size: 2rem;
   color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
 .service-item p {
   color: white;

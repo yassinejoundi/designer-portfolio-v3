@@ -34,11 +34,11 @@ export default {
   height: 100vh;
   background: linear-gradient(
         45deg,
-        rgba(28, 56, 121, 0.85),
-        rgba(156, 158, 254, 0.85),
-        rgba(171, 201, 255, 0.85),
-        rgba(58, 180, 242, 0.85),
-        rgba(96, 126, 170, 0.85)
+        rgba(28, 56, 121, 0.9),
+        rgba(156, 158, 254, 0.9),
+        rgba(171, 201, 255, 0.9),
+        rgba(58, 180, 242, 0.9),
+        rgba(96, 126, 170, 0.9)
       )
       0 0 / 1000% no-repeat,
     url(@/static/img/bg-hero.jpg) 0 0 / cover no-repeat;
@@ -134,6 +134,10 @@ export default {
 
 .hero-content h3 {
   font-size: 18px;
+}
+
+.social a {
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
