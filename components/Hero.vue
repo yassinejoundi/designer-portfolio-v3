@@ -42,32 +42,11 @@ export default {
       )
       0 0 / 1000% no-repeat,
     url(@/static/img/bg-hero.jpg) 0 0 / cover no-repeat;
-  -webkit-animation: gradientAnimation 40s ease infinite;
-  animation: gradientAnimation 40s ease infinite;
+  -webkit-animation: gradientAnimation 40s ease infinite; /*in the style.css*/
+  animation: gradientAnimation 40s ease infinite; /*in the style.css*/
   position: relative;
 }
-@-webkit-keyframes gradientAnimation {
-  0% {
-    background-position: 0% 30%, 0 0;
-  }
-  50% {
-    background-position: 100% 70%, 0 0;
-  }
-  100% {
-    background-position: 0% 30%, 0 0;
-  }
-}
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 30%, 0 0;
-  }
-  50% {
-    background-position: 100% 70%, 0 0;
-  }
-  100% {
-    background-position: 0% 30%, 0 0;
-  }
-}
+
 .hero-content {
   position: absolute;
   top: 50%;
