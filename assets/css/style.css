@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -31,7 +35,7 @@
 .section-title {
   font-size: 4rem;
   font-weight: 300;
-  color: black;
+  color: #000;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
